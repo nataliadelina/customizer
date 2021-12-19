@@ -1,7 +1,7 @@
 let inventory = {
   allSizes: (function (small, large) {
-    var sizes = [];
-    for (var i = small; i <= large; i++) {
+    let sizes = [];
+    for (let i = small; i <= large; i++) {
       sizes.push(i);
       sizes.push(i + 0.5);
     }
