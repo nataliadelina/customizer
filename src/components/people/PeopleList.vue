@@ -2,7 +2,11 @@
   <div>
     <!-- <FilterForm :people="people" /> -->
     <div class="results">
-      <transition-group name="fade">
+      <!-- <transition-group name="fade"> -->
+      <transition-group
+        enter-active-class="animated zoomIn"
+        leave-active-class="animated zoomOut"
+      >
         <div class="person" v-for="person in allPeople" :key="person.id">
           <h3>{{ person.name }}, {{ person.title }}</h3>
           <p>
@@ -23,6 +27,7 @@
 </template>
 
 <script>
+import "../../assets/animate.css";
 // import peopleData from "../../assets/people-data";
 // import FilterForm from "./FilterForm.vue";
 
