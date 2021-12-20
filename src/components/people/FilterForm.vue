@@ -40,6 +40,9 @@
         Intern</label
       >
     </div>
+    <div class="group">
+      <input type="reset" value="Reset" @click="resetFilters" />
+    </div>
   </form>
 </template>
 
@@ -59,8 +62,15 @@ export default {
   },
   methods: {
     notifyFilterUpdate() {
-      console.log("update");
       this.$emit("filter-people", this.search);
+    },
+    resetFilters() {
+      this.search = {
+        name: "",
+        title: "",
+        intern: false,
+      };
+      this.notifyFilterUpdate();
     },
   },
 };
