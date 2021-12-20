@@ -1,15 +1,19 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <Product msg="Welcome to Your Vue.js App" />
+  <Product />
+  <hr />
+  <People />
 </template>
 
 <script>
 import Product from "./components/Product.vue";
+import People from "./components/people/People.vue";
 
 export default {
   name: "App",
   components: {
     Product,
+    People,
   },
 };
 </script>
