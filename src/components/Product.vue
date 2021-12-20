@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import inventory from "../assets/inventory";
+import inventory from "../assets/data/inventory";
 
 export default {
   data() {

@@ -47,7 +47,7 @@
 </template>
 
 <script>
-import titleData from "../../assets/people-data";
+import titleData from "../../assets/data/people-data";
 
 export default {
   data() {

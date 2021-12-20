@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import peopleData from "../../assets/people-data";
+import peopleData from "../../assets/data/people-data";
 import PeopleList from "./PeopleList.vue";
 import FilterForm from "./FilterForm.vue";
 
